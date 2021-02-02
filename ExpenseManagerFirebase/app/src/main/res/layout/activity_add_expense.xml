@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".AddExpenseActivity">
+
+    <TextView
+        android:id="@+id/lblAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:text="Add Expense"
+        android:textAlignment="center"
+        android:textColor="@color/colorRed"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/lblExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="90dp"
+        android:text="Expense Category"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/txtExpense"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/lblExpense"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/lblExpense"
+        android:importantForAutofill="no"
+        android:inputType="textCapCharacters"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblExpense"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Choose Photo"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+
+    <ImageView
+        android:id="@+id/imgPicChoose"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/btnChoose"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blank_person" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgPicChoose"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Add"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>

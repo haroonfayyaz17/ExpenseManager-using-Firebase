@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".EditActivity">
+
+
+    <TextView
+        android:id="@+id/lblEdit"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:text="EDIT"
+        android:textAlignment="center"
+        android:textColor="@color/colorRed"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/lblAmount"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lblEdit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:text="Amount"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/txtAmount"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/lblAmount"
+        android:layout_alignBottom="@+id/lblAmount"
+        android:layout_centerHorizontal="true"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/lblCategory"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lblAmount"
+        android:layout_alignTop="@id/spinnerCategory"
+        android:layout_alignParentLeft="true"
+        android:text="Category"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtAmount"
+        android:layout_alignLeft="@id/txtAmount" />
+
+    <TextView
+        android:id="@+id/lblDate"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lblCategory"
+        android:layout_alignLeft="@id/lblAmount"
+        android:text="Date"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <TextView
+
+        android:id="@+id/txtDate1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lblCategory"
+        android:layout_alignTop="@id/lblDate"
+        android:layout_toRightOf="@id/lblDate"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <DatePicker
+        android:id="@+id/dateDate"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_below="@id/lblDate"
+        android:layout_alignLeft="@id/lblAmount"
+        android:background="@android:color/white"
+        android:calendarTextColor="@android:color/black"
+        android:datePickerMode="calendar"
+        android:scaleX="1.0"
+        android:scaleY="1.0" />
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Save"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+</RelativeLayout>
